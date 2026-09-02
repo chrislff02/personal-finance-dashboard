@@ -96,6 +96,7 @@ function App() {
       })
       .then((data) => {
         setTransactions(data);
+        setLoadError("");
       })
       .catch((error) => {
         console.error("Error fetching transactions:", error);
@@ -142,6 +143,7 @@ function App() {
 
       setTransactions(data);
       setUploadedFileName(file.name);
+      setLoadError("");
 
       setUploadMessage(
         uploadMode === "append"
