@@ -1,0 +1,18 @@
+# Node / React
+node_modules/
+dist/
+
+# Python
+backend/.venv/
+backend/__pycache__/
+backend/*.pyc
+
+# SQLite
+backend/finance.db
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store

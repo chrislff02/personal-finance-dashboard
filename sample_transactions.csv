@@ -1,0 +1,58 @@
+date,description,amount
+Jan 05,Salary,4400
+Jan 08,Rent,-1400
+Jan 12,Walmart,-310
+Jan 16,Chipotle,-95
+Jan 22,Uber,-80
+Jan 28,Netflix,-18
+
+Feb 05,Salary,4400
+Feb 08,Rent,-1400
+Feb 11,Whole Foods,-275
+Feb 17,McDonalds,-65
+Feb 21,Shell Gas,-90
+Feb 26,Spotify,-12
+
+Mar 05,Salary,4500
+Mar 08,Rent,-1400
+Mar 12,Trader Joe's,-420
+Mar 18,Doordash,-110
+Mar 23,Lyft,-70
+Mar 29,Amazon,-250
+
+Apr 05,Salary,4500
+Apr 08,Rent,-1400
+Apr 13,Aldi,-290
+Apr 18,Chipotle,-240
+Apr 22,Uber,-85
+Apr 27,Hulu,-15
+
+May 05,Salary,4700
+May 08,Rent,-1400
+May 12,Whole Foods,-330
+May 17,Restaurant,-125
+May 20,Uber,-210
+May 28,AMC,-40
+
+Jun 05,Salary,4700
+Jun 08,Rent,-1400
+Jun 12,Walmart,-360
+Jun 18,Chipotle,-135
+Jun 22,Shell Gas,-95
+Jun 25,Amazon,-580
+
+Jul 05,Salary,4800
+Jul 08,Rent,-1400
+Jul 13,Trader Joe's,-410
+Jul 19,Uber,-260
+Jul 23,Netflix,-18
+Jul 29,Cinema,-50
+
+Aug 05,Salary,4820
+Aug 08,Rent,-1400
+Aug 12,Trader Joe's,-620
+Aug 18,Chipotle,-350
+Aug 24,Spotify,-180
+Aug 28,Amazon,-620
+
+Sep 01,Salary,4820
