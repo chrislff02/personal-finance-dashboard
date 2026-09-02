@@ -59,6 +59,8 @@ const categoryColors = [
   "#64748b",
 ];
 
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
 function App() {
   // State & References
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -84,7 +86,7 @@ function App() {
 
   // Load transactions from backend
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/transactions")
+    fetch(`${API_URL}/transactions`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch transactions");
@@ -125,13 +127,10 @@ function App() {
     setUploadError("");
 
     try {
-      const response = await fetch(
-        `http://127.0.0.1:8000/upload?mode=${uploadMode}`,
-        {
-          method: "POST",
-          body: formData,
-        },
-      );
+      const response = await fetch(`${API_URL}/upload?mode=${uploadMode}`, {
+        method: "POST",
+        body: formData,
+      });
 
       if (!response.ok) {
         const errorData = await response.json();
@@ -170,18 +169,15 @@ function App() {
     newCategory: string,
   ) {
     try {
-      const response = await fetch(
-        `http://127.0.0.1:8000/transactions/${transactionId}`,
-        {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            category: newCategory,
-          }),
+      const response = await fetch(`${API_URL}/transactions/${transactionId}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify({
+          category: newCategory,
+        }),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to update category");
