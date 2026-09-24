@@ -333,6 +333,14 @@ function App() {
           >
             {isUploading ? "Uploading..." : "Upload CSV"}
           </button>
+
+          <a
+            className="sample-download"
+            href="/sample_transactions.csv"
+            download
+          >
+            Download Sample CSV
+          </a>
         </div>
       </header>
 
