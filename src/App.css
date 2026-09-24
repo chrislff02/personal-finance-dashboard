@@ -351,14 +351,15 @@ button {
   }
 
   .dashboard-controls {
-  width: 100%;
-  flex-wrap: wrap;
-}
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
   .month-select,
+  .upload-mode-select,
   .upload-button,
   .sample-download {
-    flex: 1;
+    width: 100%;
   }
 
   .summary-grid {
